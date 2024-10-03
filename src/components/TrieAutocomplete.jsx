@@ -37,7 +37,7 @@ const TrieAutocomplete = ({ searchKey }) => {
     }, [searchKey, wordList]);
 
     return (
-        <div className="mt-4 w-full max-w-md sm:max-w-xs md:max-w-md mx-auto p-4 sm:p-2">
+        <div className="mt-0 sm:mt-5 w-full max-w-md sm:max-w-xs md:max-w-md mx-auto p-1  sm:p-2">
             <h4 className="text-lg sm:text-base font-semibold mb-2 text-center">Autocomplete Suggestions</h4>
             {suggestions?.length > 0 ? (
                 <ul className="max-h-48 overflow-y-auto border border-gray-300 rounded-lg shadow-md p-2">
