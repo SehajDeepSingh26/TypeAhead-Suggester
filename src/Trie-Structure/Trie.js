@@ -48,7 +48,13 @@ class Trie {
 
     autoComplete(key) {
         const results = [];
+        var start = new Date().getTime();
+        
         this.complete(this.root, key, "", results);
+
+        var end = new Date().getTime();
+        var time = end - start;
+        console.log('Search time: ' + time);
         return results;
     }
 }
